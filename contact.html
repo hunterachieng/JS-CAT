@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Contact Us</title>
+    </head>
+    <body>
+        <form>
+            <label>Company Name:</label><br>
+            <input type = "text" id = "company-name"placeholder = "Enter company name"><br>
+            <label>Phone Number;</label><br>
+            <input type = "text" id = "phone-number" placeholder="Phone Number"><br>
+            <label>Location:</label><br>
+             <input type = "text"  id= "location" placeholder = "Location"><br>
+            <label>Booking Dates:</label><br>
+             <input type = "date"  id = "date" placeholder = "select"><br><br>
+            
+
+
+            
+        </form>
+        <button id= "submit">Submit</button>
+
+        <script>
+ const button = document.getElementById("submit");
+ button.addEventListener("click", function(){
+     let company = document.getElementById("company-name").value;
+     let phone = document.getElementById("phone-number").value;
+     let location = document.getElementById("location").value;
+     let date = document.getElementById("date").value;
+
+     let message = `Thank you for booking!:\n Company Name: ${company}\n Phone Number: ${phone}\n Location: ${location} \n Date: ${date}`;
+        alert(message);
+                 
+
+ })
+
+        </script>
+    </body>
+</html>
